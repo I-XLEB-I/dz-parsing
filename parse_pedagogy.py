@@ -12,7 +12,6 @@ def parse_pedagogy_articles():
     soup = BeautifulSoup(response.text, "html.parser")
 
     # --- Проверено через Inspect — малые карточки находятся в блоках .card-mini ---
-    # Если сайт обновится, селектор можно поменять
     cards = soup.select(".card-mini")
 
     results = []
